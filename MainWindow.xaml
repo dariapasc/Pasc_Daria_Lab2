@@ -42,7 +42,21 @@
         <Button x:Name="btnAddToSale" Content="Add To Sale" Margin="414,307,92,112" Grid.Column="1"/>
         <Button x:Name="btnRemoveItem" Content="Remove Item" Margin="414,338,92,80" Grid.Column="1"/>
         <Button x:Name="btnCheckOut" Content="Check Out" FontWeight="Bold" Margin="414,383,92,24" Grid.Column="1"/>
-
+        <Menu x:Name="mnuMain" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top"
+Width="131" Margin="0,26,0,0">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="_Doughnuts">
+                <MenuItem Header="Make">
+                    <MenuItem Header="Raised">
+                        <MenuItem x:Name="glazedMenuItem" Header="Glazed"/>
+                        <MenuItem x:Name="sugarMenuItem" Header="Sugar"/>
+                    </MenuItem>
+                    <MenuItem Header="Filled"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
 
 
     </Grid>
